@@ -20,4 +20,4 @@ Google Apps Script(GAS) のスクリプト実行時間は通常 6 分までで�
   * TARGET_FILE_ID → 複製する初期ファイルの ID
 * `TARGET_FILE_ID` で指定したファイルと同じフォルダ内にコピーが作られるため、あらかじめフォルダを用意して初期ファイルを入れておくと良いでしょう
 * 初期ファイルを `sample.pdf` とし、生成するファイル数を `1000` とした場合コピーファイルは次のように作られます。
-  * sample_1.pdf, sample_2.pdf, sample_3.pdf, ... sample_1000.pdf
+  * 1_sample.pdf, 2_sample.pdf, 3_sample.pdf, ... 999_sample.pdf, 1000_sample.pdf

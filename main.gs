@@ -9,7 +9,7 @@
  */
 
 MAX_FILES = 1000;
-TARGET_FILE_ID = '1KKf1qMH1cAzHKKgcJdh9W6VSciMFRiND';
+TARGET_FILE_ID = '1EZ-HS5__AZ08pgNppKVT6CNGuH07-1qJ';
 
 /**
  * 処理を実行する
@@ -18,6 +18,6 @@ function run(e){
 	var firstFile = DriveApp.getFileById(TARGET_FILE_ID);
 
 	for ( var i = 1; i <= MAX_FILES; i++ ) {
-		firstFile.makeCopy(Utilities.formatString('%s_%d', firstFile.getName(), i));
+		firstFile.makeCopy(Utilities.formatString('%d_%s', i, firstFile.getName()));
 	}
 }

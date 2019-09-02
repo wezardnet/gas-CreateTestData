@@ -1,10 +1,10 @@
 /**
  * 指定したフォルダ内にファイルコピーで複数のテストファイルを自動生成するスタンドアロン型スクリプト
  * 
- * @vesion 1.0
+ * @vesion 1.1
  * @author Kenji.Nakahara
  * @date: 2019/08/22
- * @update: 2019/08/22
+ * @update: 2019/09/02
  * @include libraries: 
  */
 
@@ -18,6 +18,6 @@ function run(e){
 	var firstFile = DriveApp.getFileById(TARGET_FILE_ID);
 
 	for ( var i = 1; i <= MAX_FILES; i++ ) {
-		firstFile.makeCopy(Utilities.formatString('%d_%s', i, firstFile.getName()));
+		firstFile.makeCopy(Utilities.formatString('%0' + String(MAX_FILES).length + 'd_%s', i, firstFile.getName()));
 	}
 }
